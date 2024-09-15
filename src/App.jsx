@@ -1,33 +1,44 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import bp_image from './assets/blackpink_1.webp'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>My Tunes</h1>
+      </header>
+      <main>
+        <div className='leftSection'>
+          <img src={bp_image} className='image' alt='blackpink image'/>
+        </div>
+        <div className='rightSection'>
+          <h2>Blackpink's albums</h2>
+          <details>
+            <summary>Born Pink</summary>
+            <ol>
+              <li>Pink Venom</li>
+              <li>Shut Down</li>
+              <li>Typa Girl</li>
+              <li>Yeah Yeah Yeah</li>
+              <li>Hard to love</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Blackpink</summary>
+            <ol>
+              <li>Boombayah</li>
+              <li>Whistle</li>
+              <li>Playing with Fire</li>
+              <li>Stay</li>
+              <li>As If It's Your Last</li>
+            </ol>
+          </details>
+        </div>
+        
+      </main>
     </>
   )
 }
