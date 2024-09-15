@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/blackpink_album_collections/'
+  base: '/COMP3170_Lab1/'
 })
